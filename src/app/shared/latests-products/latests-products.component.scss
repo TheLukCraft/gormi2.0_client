@@ -1,0 +1,12 @@
+.carousel {
+  scroll-behavior: smooth;
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}

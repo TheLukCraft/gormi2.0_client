@@ -1,0 +1,53 @@
+<!-- Kategorie -->
+<div class="flex justify-between items-center px-4 py-2">
+  <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400">
+    <li class="me-2" *ngFor="let category of categories">
+      <button
+        (click)="filterByCategory(category)"
+        class="inline-block px-4 py-3 rounded-lg"
+        [ngClass]="{
+          'bg-primary text-white': selectedCategory === category,
+          'hover:bg-gray-100 dark:hover:bg-gray-800': selectedCategory !== category
+        }"
+      >
+        {{ category }}
+      </button>
+    </li>
+  </ul>
+  <a routerLink="/sklep" class="text-sm font-medium text-primary hover:underline dark:text-primary">
+    Przeglądaj wszystkie
+  </a>
+</div>
+
+<div class="relative w-[calc(100%-8rem)] mx-auto overflow-visible">
+  <!-- Lewy przycisk -->
+  <button
+    class="absolute z-10 top-1/2 left-[-3rem] transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700"
+    (click)="scrollCarousel(-1)"
+  >
+    <img src="/assets/icons/left-arrow.svg" alt="Poprzedni" class="w-6 h-6" />
+  </button>
+
+  <!-- Wrapper karuzeli -->
+  <div class="overflow-hidden">
+    <!-- Karuzela -->
+    <div
+      #carousel
+      class="flex transition-transform duration-300 ease-in-out"
+    >
+      <app-product-card
+        *ngFor="let product of filteredProducts"
+        [product]="product"
+        class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-2"
+      ></app-product-card>
+    </div>
+  </div>
+
+  <!-- Prawy przycisk -->
+  <button
+    class="absolute z-10 top-1/2 right-[-3rem] transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700"
+    (click)="scrollCarousel(1)"
+  >
+    <img src="/assets/icons/right-arrow.svg" alt="Następny" class="w-6 h-6" />
+  </button>
+</div>

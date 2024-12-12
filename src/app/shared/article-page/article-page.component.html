@@ -1,0 +1,39 @@
+<div *ngIf="article" class="w-full max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+  <!-- Górna sekcj a z obrazem -->
+  <div class="relative">
+    <img [src]="article.imageUrl" [alt]="article.title" class="w-full h-64 md:h-96 object-cover rounded-lg">
+  </div>
+
+  <div class="mt-8 text-center">
+    <h1 class="text-3xl md:text-5xl font-bold text-primary leading-tight">
+      {{ article.title }}
+    </h1>
+    <p class="text-neutral text-sm md:text-base mt-2">
+      {{ article.description }}
+    </p>
+  </div>
+
+  <div class="mt-12 mx-auto max-w-3xl">
+    <article class="prose prose-lg md:prose-xl max-w-none text-textPrimary">
+      <p>
+        {{ article.content }}
+      </p>
+    </article>
+  </div>
+
+  <!-- Sekcja tagów -->
+  <div class="mt-8 mx-auto max-w-3xl">
+    <h3 class="text-lg font-semibold text-textPrimary mb-4">Tagi:</h3>
+    <div class="flex flex-wrap gap-4">
+      <a href="/tag/kostka" class="px-4 py-2 bg-primary text-textSecondary rounded-full text-sm hover:bg-cta transition">
+        Kostka Brukowa
+      </a>
+      <a href="/tag/ogrodzenia" class="px-4 py-2 bg-primary text-textSecondary rounded-full text-sm hover:bg-cta transition">
+        Ogrodzenia
+      </a>
+      <a href="/tag/pergole" class="px-4 py-2 bg-primary text-textSecondary rounded-full text-sm hover:bg-cta transition">
+        Pergole
+      </a>
+    </div>
+  </div>
+</div>

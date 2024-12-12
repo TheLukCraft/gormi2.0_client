@@ -1,0 +1,165 @@
+<footer class="bg-bgSection dark:bg-gray-900">
+  <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+    <div class="md:flex md:justify-between">
+      <div class="mb-6 md:mb-0">
+        <a href="https://gormi.pl/" class="flex items-center">
+          <img src="/assets/images/logo_HD_IMG.png" class="h-8 me-3" alt="GORMI Logo" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-textSecondary">GORMI</span>
+        </a>
+        <p class="text-gray-600 dark:text-gray-400 mt-6 md:w-4/12 ">Dystrybutor kostki brukowej, płyt
+          tarasowych i kruszywa dekoracyjnego.
+          Zapraszamy do naszych ogrodów
+          wystawowych.</p>
+      </div>
+      <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Mapa strony</h2>
+          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+            <li class="mb-4">
+              <a routerLink="/" class="hover:underline hover:cursor-pointer">Strona Główna</a>
+            </li>
+            <li class="mb-4">
+              <a routerLink="/kostka-brukowa" class="hover:underline hover:cursor-pointer">Kostka Brukowa</a>
+            </li>
+            <li class="mb-4">
+              <a routerLink="/ogrodzenia" class="hover:underline hover:cursor-pointer">Ogrodzenia</a>
+            </li>
+            <li class="mb-4">
+              <a routerLink="/pergole-aluminiowe-i-bioklimatyczne" class="hover:underline hover:cursor-pointer">Pergole</a>
+            </li>
+            <li class="mb-4">
+              <a routerLink="/akcesoria-i-inne" class="hover:underline hover:cursor-pointer">Akcesoria i Inne</a>
+            </li>
+            <li class="mb-4">
+              <a routerLink="/sklep" class="hover:underline hover:cursor-pointer">Sklep Online</a>
+            </li>
+            <li class="mb-4">
+              <a routerLink="/kontakt" class="hover:underline hover:cursor-pointer">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Punkty sprzedaży</h2>
+          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+            <li class="mb-4">
+              <button (click)="setBranch('Kraków')" data-modal-target="popup-branchDetails"
+                data-modal-toggle="popup-branchDetails" class="hover:underline ">Kraków</button>
+            </li>
+            <li class="mb-4">
+              <button (click)="setBranch('Libertów')" data-modal-target="popup-branchDetails"
+                data-modal-toggle="popup-branchDetails" class="hover:underline">Libertów</button>
+            </li>
+            <li class="mb-4">
+              <button (click)="setBranch('Bielsko-Biała')" data-modal-target="popup-branchDetails"
+                data-modal-toggle="popup-branchDetails" class="hover:underline">Bielsko-Biała</button>
+            </li>
+            <li class="mb-4">
+              <button (click)="setBranch('Magazyn Węgrzyce')" data-modal-target="popup-branchDetails"
+                data-modal-toggle="popup-branchDetails" class="hover:underline">Magazyn</button>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Pomoc</h2>
+          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+            <li class="mb-4">
+              <a href="#" class="hover:underline">Regulamin</a>
+            </li>
+            <li class="mb-4">
+              <a href="#" class="hover:underline">Polityka prywatności</a>
+            </li>
+            <li class="mb-4">
+              <a href="#" class="hover:underline">Polityka cookies</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline">Polityka zwrotów</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    <div class="sm:flex sm:items-center sm:justify-between">
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="https://flowbite.com/"
+          class="hover:underline"></a>Gormi. Wszelkie prawa zastrzeżone | Autor: Łukasz Capała
+      </span>
+      <div class="flex mt-4 sm:justify-center sm:mt-0">
+        <a (click)="goToLink('https://www.facebook.com/gormi.kostka.brukowa/?locale=pl_PL')"
+          class="text-gray-500 hover:text-gray-900 dark:hover:text-white hover:cursor-pointer">
+          <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+            viewBox="0 0 50 50">
+            <path fill-rule="evenodd"
+              d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 25.832031 46 A 1.0001 1.0001 0 0 0 26.158203 46 L 31.832031 46 A 1.0001 1.0001 0 0 0 32.158203 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 33 44 L 33 30 L 36.820312 30 L 38.220703 23 L 33 23 L 33 21 C 33 20.442508 33.05305 20.398929 33.240234 20.277344 C 33.427419 20.155758 34.005822 20 35 20 L 38 20 L 38 14.369141 L 37.429688 14.097656 C 37.429688 14.097656 35.132647 13 32 13 C 29.75 13 27.901588 13.896453 26.71875 15.375 C 25.535912 16.853547 25 18.833333 25 21 L 25 23 L 22 23 L 22 30 L 25 30 L 25 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 32 15 C 34.079062 15 35.38736 15.458455 36 15.701172 L 36 18 L 35 18 C 33.849178 18 32.926956 18.0952 32.150391 18.599609 C 31.373826 19.104024 31 20.061492 31 21 L 31 25 L 35.779297 25 L 35.179688 28 L 31 28 L 31 44 L 27 44 L 27 28 L 24 28 L 24 25 L 27 25 L 27 21 C 27 19.166667 27.464088 17.646453 28.28125 16.625 C 29.098412 15.603547 30.25 15 32 15 z"
+              clip-rule="evenodd" />
+          </svg>
+          <span class="sr-only">Facebook page</span>
+        </a>
+        <a (click)="goToLink('https://www.instagram.com/kostka_brukowa_gormi.pl')"
+          class="text-gray-500 hover:text-gray-900 dark:hover:text-white hover:cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" class="w-8 h-8" fill="currentColor">
+            <path
+            d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z" />
+          </svg>
+          <span class="sr-only">Facebook page</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Modal -->
+<div id="popup-branchDetails" tabindex="-1"
+  class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+  <div class="relative p-4 w-full max-w-md max-h-full">
+    <div class="relative bg-bgMain rounded-lg shadow border border-border dark:bg-border p-5">
+      <button type="button"
+        class="absolute top-3 end-2.5 text-shadow bg-transparent hover:bg-gray-100 rounded-lg w-8 h-8"
+        data-modal-hide="popup-branchDetails">
+        <img src="/assets/icons/green/x.svg" alt="Close" />
+      </button>
+      <h3 class="text-xl font-bold mb-4 text-textPrimary dark:text-textSecondary">
+        {{ selectedBranch?.name }}
+      </h3>
+      <ul class="space-y-3" *ngIf="selectedBranch">
+        <li *ngIf="selectedBranch.phone">
+          <a [href]="'tel:' + selectedBranch.phone" class="flex items-center text-cta hover:text-primary">
+            <img src="/assets/icons/green/phone.svg" class="w-5 h-5 mr-2" alt="Phone" />
+            {{ selectedBranch.phone }}
+          </a>
+        </li>
+        <li *ngIf="selectedBranch.phone2">
+          <a [href]="'tel:' + selectedBranch.phone2" class="flex items-center text-cta hover:text-primary">
+            <img src="/assets/icons/green/phone.svg" class="w-5 h-5 mr-2" alt="Phone" />
+            {{ selectedBranch.phone2 }}
+          </a>
+        </li>
+        <li *ngIf="selectedBranch.email">
+          <a [href]="'mailto:' + selectedBranch.email" class="flex items-center text-cta hover:text-primary">
+            <img src="/assets/icons/green/email.svg" class="w-5 h-5 mr-2" alt="Email" />
+            {{ selectedBranch.email }}
+          </a>
+        </li>
+        <li>
+          <a [href]="'https://www.google.com/maps/search/?api=1&query=' + selectedBranch.address" target="_blank"
+            class="flex items-center text-cta hover:text-primary">
+            <img src="/assets/icons/green/address.svg" class="w-5 h-5 mr-2" alt="Address" />
+            {{ selectedBranch.address }}
+          </a>
+        </li>
+        <li>
+          <p class="flex items-center text-textPrimary dark:text-textSecondary">
+            <img src="/assets/icons/green/clock.svg" class="w-5 h-5 mr-2" alt="Hours" />
+            Pon-Pt: {{ selectedBranch.hoursWeekdays }}
+          </p>
+        </li>
+        <li>
+          <p class="flex items-center text-textPrimary dark:text-textSecondary">
+            <img src="/assets/icons/green/clock.svg" class="w-5 h-5 mr-2" alt="Hours" />
+            Sob: {{ selectedBranch.hoursSaturday }}
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

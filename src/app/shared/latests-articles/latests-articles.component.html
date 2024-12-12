@@ -1,0 +1,11 @@
+<div class="w-full">
+  <h2 class="text-4xl md:text-5xl font-bold mb-12 text-textPrimary text-center">
+    <span class="text-primary">Najnowsze</span> artykuły
+  </h2>
+  <div class="flex flex-wrap gap-8 justify-center">
+    @for (article of articles; track $index) {
+      <app-article-card [article]="article"></app-article-card>
+    }
+  </div>
+</div>
+

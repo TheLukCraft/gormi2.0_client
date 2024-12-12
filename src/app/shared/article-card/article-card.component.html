@@ -1,0 +1,27 @@
+<div
+  class="max-w-sm bg-bgMain border h-[490px] border-border rounded-lg shadow dark:bg-border dark:border-border md:shadow hover:shadow-lg hover:scale-105 transition-transform duration-300 flex flex-col justify-between">
+  <a [href]="article?.link">
+    <img class="rounded-t-lg aspect-video" [src]="article?.imageUrl" [alt]="article?.title" />
+  </a>
+  <div class="p-5 flex flex-col justify-between flex-grow">
+    <div>
+      <a [href]="article?.link">
+        <h5
+          class="mb-4 text-2xl font-bold tracking-tight opacity-90 text-textPrimary dark:text-textSecondary hover:text-primary transition-colors duration-300 line-clamp-2">
+          {{ article?.title}}</h5>
+      </a>
+      <p class="mb-4 font-normal text-textPrimary dark:text-textSecondary leading-loose opacity-75 line-clamp-3">
+        {{ article?.description }}
+      </p>
+    </div>
+    <a [href]="article?.link"
+      class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-cta rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-cta dark:hover:bg-primary dark:focus:ring-primary mt-auto self-start">
+      Czytaj dalej
+      <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+        viewBox="0 0 14 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M1 5h12m0 0L9 1m4 4L9 9" />
+      </svg>
+    </a>
+  </div>
+</div>

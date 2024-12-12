@@ -1,0 +1,37 @@
+<div class="w-full max-w-7xl mx-auto">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+    <div>
+      <h2 class="text-4xl md:text-5xl font-bold mb-4 text-textPrimary"><span class="text-primary">Czemu</span> akurat
+        my?</h2>
+      <h4 class="text-textPrimary text-lg md:text-xl font-medium mb-4 opacity-90">Jakość usług. Jak to robimy?</h4>
+      <div class="h-[2px] w-full bg-shadow my-6"></div>
+      <p class="text-textPrimary mt-4 text-base md:text-lg leading-loose opacity-75">
+        Jesteśmy liderami na rynku kostki brukowej, zapewniając produkty najwyższej jakości. Nasza kostka brukowa jest
+        trwała, estetyczna i dostępna w różnorodnych wzorach, idealnie pasujących do każdego otoczenia. Dzięki
+        zaawansowanej technologii produkcji, zapewniamy wyroby, które wytrzymają lata, bez względu na warunki
+        atmosferyczne.</p>
+    </div>
+
+    <div>
+      <img class="h-auto w-full object-cover rounded-lg"
+        src="/assets/images/galerie/ogrody-wystawowe/gormi-siedziba.jpg" alt="Siedziba GORMI">
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 mt-8 gap-6">
+
+    @for (feature of features; track $index) {
+
+    <div class="flex flex-row items-center border border-border p-4 rounded-lg gap-4 transition-transform duration-200 hover:scale-105">
+      <img class="h-12 w-12" src="/assets/icons/green/{{feature.icon}}" alt="{{ feature.title}} GORMI">
+        <div class="flex flex-col">
+          <h4 class="text-md md:text-lg font-semibold text-textPrimary">{{ feature.title}}</h4>
+          <p class="text-sm md:text-base text-textPrimary leading-snug opacity-75 mt-2">{{ feature.description}}</p>
+        </div>
+    </div>
+  }
+
+  </div>
+
+</div>
