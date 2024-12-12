@@ -8,4 +8,4 @@ RUN npm run build
 FROM node:20.11.1
 WORKDIR /usr/app
 COPY --from=build /app/dist/client ./
-EXPOSE 80
+EXPOSE 4200
