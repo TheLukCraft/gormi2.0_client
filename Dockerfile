@@ -8,9 +8,9 @@ RUN ng build --configuration=production
 
 FROM node:21-alpine AS server
 WORKDIR /app
-COPY src/package*.json ./
+COPY src/installer/package*.json ./
 RUN npm install
-COPY src .
+COPY src/installer .
 EXPOSE 3000
 CMD ["node", "index.js"]
 
