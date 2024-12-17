@@ -1,0 +1,14 @@
+.animate-scroll {
+  display: flex;
+  gap: 2rem; /* Odstęp między logami */
+  animation: scroll 100s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 2rem)); /* Przesunięcie o szerokość kontenera */
+  }
+}

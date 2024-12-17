@@ -1,0 +1,81 @@
+<section>
+  <div class="pt-6">
+    <div class="flex justify-center mb-12">
+      <app-breadcrumb ></app-breadcrumb>
+     </div>
+  </div>
+
+<app-content-section
+[headingHighlight]="'GORMI'"
+[heading]="'Twoje Idealne Ogrodzenie'"
+[subheading]="'Styl, trwałość i funkcjonalność w jednym miejscu'"
+[description]="'Ogrodzenia z naszej oferty trafiają w każde gusta, od rustykalnych imitujących piękno naturalnego kamienia po nowoczesne w prostej formie oraz bogatej kolorystyce do wyboru. Wybierając nasze ogrodzenia możesz od razu wybrać przęsła oraz bramę odpowiednią dla Twojej inwestycji.'"
+[imageSrc]="'/assets/images/ogrodzenia/ogrodzenia.webp'"
+[imageAlt]="'GORMI ogrodzenia'"
+[imagePosition]="'right'"
+[cols]="3"
+[features]="[
+{
+    icon: 'clock.svg',
+    title: 'Szybka realizacja',
+    description: 'Dokładamy wszelkich starań aby zamówiony przez Państwa materiał dotarł na czas.',
+  },
+  {
+    icon: 'delivery.svg',
+    title: 'Dostawa',
+    description: 'Organizowane przez nas dostawy są realizowane przez doświadczonych kierowców, zapewniamy rozładunek HDS na inwestycji.',
+  },
+  {
+    icon: 'squares.svg',
+    title: 'Szeroki asortyment',
+    description: 'Oferujemy szeroką gamę produktów, umożliwiającą wybór idealnej kostki na każdy projekt.',
+  },
+]"
+>
+
+></app-content-section>
+
+<div class="pt-12 hidden lg:block">
+  <app-scrolling-banner></app-scrolling-banner>
+</div>
+<div>
+  <app-cta-banner></app-cta-banner>
+</div>
+
+<div class="py-24">
+  <app-content-section-short
+[headingHighlight]="'Dlaczego wybrać'"
+[heading]="'nasze ogrodzenia?'"
+[description]="'Nasze ogrodzenia to idealne połączenie funkcjonalności, estetyki i trwałości. Dzięki zastosowaniu nowoczesnych technologii, nasze produkty są odporne na zmienne warunki atmosferyczne, co gwarantuje ich długowieczność i niezawodność. Wybierając nasze ogrodzenia, zyskujesz pewność, że Twoja przestrzeń zewnętrzna będzie nie tylko bezpieczna, ale również piękna i dobrze zorganizowana.'"
+[imageSrc]="'/assets/images/ogrodzenia/ogrodzenia1.webp'"
+[imageAlt]="'GORMI nasze ogrodzenia'"
+[imagePosition]="'right'"
+[cols]="3"
+[features]="[
+{
+    icon: 'cube.svg',
+    title: 'Wysoka jakość materiałów'
+  },
+  {
+    icon: 'puzzle.svg',
+    title: 'Indywidualne rozwiązania'
+  },
+  {
+    icon: 'global.svg',
+    title: 'Ekologiczne podejście'
+  },
+]"
+>
+
+></app-content-section-short>
+<div class="pt-12 md:px-32">
+  <app-products-carousel-small [defaultCategory]="'Ogrodzenia'"></app-products-carousel-small>
+</div>
+</div>
+
+<section class="py-12 bg-gray-100">
+  <app-latests-articles></app-latests-articles>
+</section>
+
+
+</section>

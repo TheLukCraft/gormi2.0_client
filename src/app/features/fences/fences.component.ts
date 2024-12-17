@@ -3,17 +3,17 @@ import { BreadcrumbComponent } from "../../shared/breadcrumb/breadcrumb.componen
 import { ContentSectionComponentComponent } from "../../shared/content-section/content-section.component";
 import { ScrollingBannerComponent } from "../../shared/scrolling-banner/scrolling-banner.component";
 import { CtaBannerComponent } from "../../shared/cta-banner/cta-banner.component";
-import { ContentSesionShortComponent } from '../../shared/content-section-short/content-section-short.component';
+import { ContentSesionShortComponent } from "../../shared/content-section-short/content-section-short.component";
 import { LatestsArticlesComponent } from "../../shared/latests-articles/latests-articles.component";
 import { ProductsCarouselSmallComponent } from "../../shared/products-carousel-small/products-carousel-small.component";
 
 @Component({
-  selector: 'app-cobblestone',
+  selector: 'app-fences',
   standalone: true,
   imports: [BreadcrumbComponent, ContentSectionComponentComponent, ScrollingBannerComponent, CtaBannerComponent, ContentSesionShortComponent, LatestsArticlesComponent, ProductsCarouselSmallComponent],
-  templateUrl: './cobblestone.component.html',
-  styleUrl: './cobblestone.component.scss'
+  templateUrl: './fences.component.html',
+  styleUrl: './fences.component.scss'
 })
-export class CobblestoneComponent {
+export class FencesComponent {
 
 }

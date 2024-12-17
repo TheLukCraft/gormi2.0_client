@@ -1,0 +1,47 @@
+<div class="w-full max-w-7xl mx-auto">
+  <div [ngClass]="imagePosition === 'right' ? 'grid-cols-1 md:grid-cols-2' : 'grid-cols-1 md:grid-cols-2 md:grid-flow-col-dense'" class="grid gap-8 mx-4">
+    <div *ngIf="imagePosition === 'right'">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4 text-textPrimary">
+        <span class="text-primary">{{ headingHighlight }}</span> {{ heading }}
+      </h2>
+      <h4 class="text-textPrimary text-lg md:text-xl font-medium mb-4 opacity-90">
+        {{ subheading }}
+      </h4>
+      <div class="h-[2px] w-full bg-shadow my-6"></div>
+      <p class="text-textPrimary mt-4 text-base md:text-lg leading-loose opacity-75">
+        {{ description }}
+      </p>
+    </div>
+    <div *ngIf="imagePosition === 'right'">
+      <img class="h-auto w-full  object-cover rounded-lg md:h-[400px] md:w-[600px]" [src]="imageSrc" [alt]="imageAlt">
+    </div>
+    <div *ngIf="imagePosition === 'left'">
+      <img class="h-auto w-full object-cover rounded-lg" [src]="imageSrc" [alt]="imageAlt">
+    </div>
+    <div *ngIf="imagePosition === 'left'">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4 text-textPrimary">
+        <span class="text-primary">{{ headingHighlight }}</span> {{ heading }}
+      </h2>
+      <h4 class="text-textPrimary text-lg md:text-xl font-medium mb-4 opacity-90">
+        {{ subheading }}
+      </h4>
+      <div class="h-[2px] w-full bg-shadow my-6"></div>
+      <p class="text-textPrimary mt-4 text-base md:text-lg leading-loose opacity-75">
+        {{ description }}
+      </p>
+    </div>
+  </div>
+
+  <div *ngIf="features && features.length > 0" [ngClass]="'grid grid-cols-1 ' + (cols ? 'md:grid-cols-' + cols : 'md:grid-cols-3') + ' mt-8 gap-6'">
+    <div
+      *ngFor="let feature of features; let i = index"
+      class="flex flex-row items-center border border-border p-4 rounded-lg gap-4 transition-transform duration-200 hover:scale-105"
+    >
+      <img class="h-12 w-12" [src]="'/assets/icons/green/' + feature.icon" [alt]="feature.title">
+      <div class="flex flex-col">
+        <h4 class="text-md md:text-lg font-semibold text-textPrimary">{{ feature.title }}</h4>
+        <p class="text-sm md:text-base text-textPrimary leading-snug opacity-75 mt-2">{{ feature.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,115 @@
-<p>cobblestone works!</p>
+<section>
+  <div class="pt-6">
+    <div class="flex justify-center mb-12">
+      <app-breadcrumb ></app-breadcrumb>
+     </div>
+  </div>
+
+<app-content-section
+[headingHighlight]="'GORMI'"
+[heading]="'Prosty Wybór'"
+[subheading]="'Twój pomysł, nasza kostka – razem stworzymy coś wyjątkowego!'"
+[description]="'Opowiedz nam o swoich wyobrażeniach podjazdu, podwórka, tarasu. Pokaż projekty, zadaj wszystkie pytania, które chodzą Ci po głowie. My doradzimy jaki rodzaj kostki wybrać, opowiemy o jej właściwościach i rozwiejemy Twoje wątpliwości. W Gormi możesz liczyć na nas, naszą wiedzę i znajomośc branży.'"
+[imageSrc]="'/assets/images/galerie/kostki-brukowe/img5.jpg'"
+[imageAlt]="'GORMI siedziba'"
+[imagePosition]="'right'"
+[cols]="3"
+[features]="[
+{
+    icon: 'clock.svg',
+    title: 'Szybka realizacja',
+    description: 'Dokładamy wszelkich starań aby zamówiony przez Państwa materiał dotarł na czas.',
+  },
+  {
+    icon: 'delivery.svg',
+    title: 'Dostawa',
+    description: 'Organizowane przez nas dostawy są realizowane przez doświadczonych kierowców, zapewniamy rozładunek HDS na inwestycji.',
+  },
+  {
+    icon: 'squares.svg',
+    title: 'Szeroki asortyment',
+    description: 'Oferujemy szeroką gamę produktów, umożliwiającą wybór idealnej kostki na każdy projekt.',
+  },
+]"
+>
+
+></app-content-section>
+
+<div class="pt-12 hidden lg:block">
+  <app-scrolling-banner></app-scrolling-banner>
+</div>
+
+<div>
+  <app-cta-banner></app-cta-banner>
+</div>
+
+<div class="py-24 bg-gray-100">
+  <app-content-section-short
+[headingHighlight]="'Dlaczego wybrać'"
+[heading]="'nasze płyty tarasowe?'"
+[description]="'Posiadamy bogatą ofertę płyt tarasowych w różnych systemach zabudowy, od prostych płyt monokolorystycznych po gresy tarasowe montowane na dedykowanych wspornikach. Nasi doradcy pomogą z doborem odpowiedniej płyty wraz przedstawieniem wad i zalet dla danego systemu.'"
+[imageSrc]="'/assets/images/kostka-brukowa/Płyta-tarasowa-Gresowa.webp'"
+[imageAlt]="'GORMI siedziba'"
+[imagePosition]="'right'"
+[cols]="3"
+[features]="[
+{
+    icon: 'adjustments-horizontal.svg',
+    title: 'Elastyczność projektowa'
+  },
+  {
+    icon: 'wrench.svg',
+    title: 'Prosty montaż'
+  },
+  {
+    icon: 'cloud.svg',
+    title: 'Wytrzymałość na warunki atmosferyczne'
+  },
+]"
+>
+
+></app-content-section-short>
+
+<div class="pt-12 md:px-32">
+  <app-products-carousel-small [defaultCategory]="'Płyty tarasowe'"></app-products-carousel-small>
+</div>
+</div>
+
+
+<div class="py-12 ">
+  <app-content-section-short
+[headingHighlight]="'Dlaczego wybrać'"
+[heading]="'naszą kostkę brukową?'"
+[description]="'Nasze wieloletnie wieloletnie doświadczenie w sprzedaży kostki brukowej pozwoliło nam zbudować ofertę opartą na sprawdzonych dostawcach których dopracowanie oraz jakość produktów odpowiada najwyższym standardom, bo jako firmę interesuje nas sprzedaż tylko najlepszego produktu dostępnego na rynku'"
+[imageSrc]="'/assets/images/galerie/kostki-brukowe/img2.jpg'"
+[imageAlt]="'wybór kostki brukowej'"
+[imagePosition]="'left'"
+[cols]="3"
+[features]="[
+{
+    icon: 'rectangle-stack.svg',
+    title: 'Szeroki wybór wzorów'
+  },
+  {
+    icon: 'shield-check.svg',
+    title: 'Wyjątkowa trwałość'
+  },
+  {
+    icon: 'delivery.svg',
+    title: 'Ekspresowa realizacja'
+  },
+]"
+>
+
+></app-content-section-short>
+<div class="pt-12 md:px-32">
+  <app-products-carousel-small [defaultCategory]="'Kostka brukowa'"></app-products-carousel-small>
+</div>
+</div>
+
+<section class="py-12 bg-gray-100">
+  <app-latests-articles></app-latests-articles>
+</section>
+
+
+</section>

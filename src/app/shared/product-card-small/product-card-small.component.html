@@ -1,31 +1,19 @@
-<div class="w-full max-w-sm bg-bgMain border border-border rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 dark:bg-secondary flex flex-col justify-between">
-  <!-- Obrazek -->
+<div class="w-full max-w-sm bg-bgMain border border-border rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 dark:bg-secondary">
   <a href="#">
     <img class="p-4 rounded-t-lg" [src]="product.image" [alt]="product.name" />
   </a>
-
-  <!-- Zawartość karty -->
-  <div class="px-5 flex-1 flex flex-col justify-between">
-    <!-- Tytuł produktu -->
+  <div class="px-5 pb-5">
     <a href="#">
-      <h5 class="text-xl h-14 font-semibold tracking-tight text-textPrimary dark:text-textSecondary hover:text-primary transition-colors duration-300 line-clamp-2">
+      <!-- Dodajemy stałą wysokość dla tytułu -->
+      <h5
+        class="text-lg font-semibold tracking-tight text-textPrimary dark:text-textSecondary hover:text-primary transition-colors duration-300 line-clamp-2 h-14 mb-4"
+      >
         {{ product.name }}
       </h5>
     </a>
-
-    <!-- Sekcja z najniższą ceną -->
-    <div class="h-12 flex items-center">
-      <span class="text-sm font-medium text-neutral dark:text-textSecondary">
-        Najniższa cena z 30 dni:
-        <span class="font-semibold">
-          {{ product.lowestPrice }}
-        </span>
-      </span>
-    </div>
-
-    <!-- Cena i ikony -->
-    <div class="flex items-center justify-between mt-auto pb-5">
-      <span class="text-3xl font-bold text-cta dark:text-success">
+    <!-- Stopka z ceną i ikonami -->
+    <div class="flex items-center justify-between">
+      <span class="text-xl font-bold text-cta dark:text-success">
         {{ product.price }}
       </span>
       <div class="flex space-x-2">

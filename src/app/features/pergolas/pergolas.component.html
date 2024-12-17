@@ -1,0 +1,94 @@
+<section>
+  <div class="pt-6">
+    <div class="flex justify-center mb-12">
+      <app-breadcrumb ></app-breadcrumb>
+     </div>
+  </div>
+
+<app-content-section
+[headingHighlight]="'GORMI'"
+[heading]="'Pergole Aluminiowe Bioklimatyczne'"
+[subheading]="'Nowoczesne pergole bioklimatyczne – komfort i design na każdą pogodę'"
+[description]="'Jesteśmy wiodącym dostawcą pergoli aluminiowych bioklimatycznych, które łączą nowoczesny design z funkcjonalnością. Nasze pergole są idealnym rozwiązaniem dla osób, które chcą cieszyć się przestrzenią na świeżym powietrzu przez cały rok, niezależnie od pogody. Dzięki zaawansowanym technologiom, nasze produkty zapewniają optymalny komfort i ochronę przed czynnikami atmosferycznymi.'"
+[imageSrc]="'/assets/images/ogrodzenia/ogrodzenia.webp'"
+[imageAlt]="'GORMI ogrodzenia'"
+[imagePosition]="'right'"
+[cols]="3"
+[features]="[
+{
+    icon: 'sparkles.svg',
+    title: 'Nowoczesny Design',
+    description: 'Nasze pergole charakteryzują się nowoczesnym i eleganckim wyglądem, który doskonale komponuje się z każdym rodzajem architektury.',
+  },
+  {
+    icon: 'shield-check.svg',
+    title: 'Trwałość i Niezawodność',
+    description: 'Wykonane z wysokiej jakości aluminium, nasze pergole są wyjątkowo trwałe i odporne na korozję, co gwarantuje ich długowieczność.',
+  },
+  {
+    icon: 'puzzle.svg',
+    title: 'Łatwa Obsługa',
+    description: 'Nasze pergole są wyposażone w zaawansowane systemy sterowania, które umożliwiają łatwe dostosowanie ilości światła i wentylacji za pomocą jednego przycisku.',
+  },
+]"
+>
+
+></app-content-section>
+
+<div class="py-12 lg:mx-32 2xl:mx-64">
+  <app-short-gallery
+  [imagePaths]="[
+    '/assets/images/galerie/pergole-aluminiowe/zdj1.webp',
+    '/assets/images/galerie/pergole-aluminiowe/zdj2.webp',
+    '/assets/images/galerie/pergole-aluminiowe/zdj3.webp',
+    '/assets/images/galerie/pergole-aluminiowe/zdj4.webp'
+  ]"
+></app-short-gallery>
+
+</div>
+
+<div class="pt-12 hidden lg:block">
+  <app-scrolling-banner></app-scrolling-banner>
+</div>
+
+<div>
+  <app-cta-banner></app-cta-banner>
+</div>
+
+<div class="py-24">
+  <app-content-section-short
+[headingHighlight]="'Dlaczego wybrać'"
+[heading]="'nasze pergole aluminiowe bioklimatyczne?'"
+[description]="'Nasze pergole aluminiowe bioklimatyczne to idealne połączenie funkcjonalności, estetyki i trwałości. Dzięki zastosowaniu nowoczesnych technologii, nasze produkty są odporne na zmienne warunki atmosferyczne, co gwarantuje ich długowieczność i niezawodność. Wybierając nasze pergole, zyskujesz pewność, że Twoja przestrzeń zewnętrzna będzie nie tylko komfortowa, ale również piękna i dobrze zorganizowana.'"
+[imageSrc]="'/assets/images/galerie/pergole-aluminiowe/zdj2.webp'"
+[imageAlt]="'GORMI nasze ogrodzenia'"
+[imagePosition]="'right'"
+[cols]="3"
+[features]="[
+{
+    icon: 'light-bulb.svg',
+    title: 'Energooszczędność'
+  },
+  {
+    icon: 'cube.svg',
+    title: 'Minimalistyczna estetyka'
+  },
+  {
+    icon: 'global.svg',
+    title: 'Ekologiczne materiały'
+  },
+]"
+>
+
+></app-content-section-short>
+<div class="pt-12 md:px-32">
+  <app-products-carousel-small [defaultCategory]="'Pergole'"></app-products-carousel-small>
+</div>
+</div>
+
+<section class="py-12 bg-gray-100">
+  <app-latests-articles></app-latests-articles>
+</section>
+
+
+</section>
