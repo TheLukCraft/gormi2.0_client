@@ -1,0 +1,103 @@
+<div class="pt-6">
+  <div class="flex justify-center mb-12">
+    <app-breadcrumb ></app-breadcrumb>
+   </div>
+</div>
+
+<div class="w-full max-w-7xl mx-auto px-4">
+  <!-- Taby -->
+  <div class="flex justify-center mb-8 overflow-x-auto">
+    <ul class="flex space-x-4 border-b border-border">
+      <li
+        *ngFor="let location of locations; let i = index"
+        (click)="activeTab = i"
+        [ngClass]="{
+          'border-primary text-primary': activeTab === i,
+          'text-neutral': activeTab !== i
+        }"
+        class="cursor-pointer pb-2 px-4 border-b-2 font-medium transition-colors whitespace-nowrap"
+      >
+        {{ location.name }}
+      </li>
+    </ul>
+  </div>
+
+  <!-- Wyświetlane dane -->
+  <div *ngIf="locations[activeTab]" class="grid gap-8 md:grid-cols-2">
+    <!-- Dane kontaktowe -->
+    <div class="space-y-4 text-center md:text-left">
+      <h2 class="text-3xl font-bold text-primary">{{ locations[activeTab].name }}</h2>
+      <p (click)="openGoogleMaps(locations[activeTab].address)" class="flex items-center justify-center md:justify-start text-textPrimary hover:text-primary cursor-pointer">
+        <img src="/assets/icons/green/map.svg" alt="Adres" class="w-6 h-6 mr-2" />
+        {{ locations[activeTab].address }}
+      </p>
+      <p class="flex items-center justify-center md:justify-start text-textPrimary font-medium hover:text-primary cursor-pointer">
+        <img src="/assets/icons/green/phone.svg" alt="Telefon" class="w-6 h-6 mr-2" />
+        <a [href]="'tel:' + locations[activeTab].phone" class="hover:text-primary">
+          Tel: {{ locations[activeTab].phone }}
+        </a>
+      </p>
+      <p class="flex items-center justify-center md:justify-start text-textPrimary font-medium hover:text-primary cursor-pointer">
+        <img src="/assets/icons/green/e-mail.svg" alt="E-mail" class="w-6 h-6 mr-2" />
+        <a [href]="'mailto:' + locations[activeTab].email" class="hover:text-primary">
+          E-mail: {{ locations[activeTab].email }}
+        </a>
+      </p>
+    </div>
+
+    <div class="overflow-hidden rounded-md border border-border">
+      <iframe
+        [src]="locations[activeTab].mapSrc"
+        class="w-full"
+        [ngClass]="{
+          'h-64': !isMdScreen,
+          'h-96': isMdScreen
+        }"
+        loading="lazy"
+        style="border:0;"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+
+
+  <!-- Formularz kontaktowy -->
+  <div class="mt-8">
+    <h3 class="text-2xl font-semibold text-primary text-center md:text-left">Formularz kontaktowy</h3>
+    <form (ngSubmit)="onSubmit()" class="grid gap-6 mt-4">
+      <input
+        type="text"
+        placeholder="Imię i nazwisko"
+        class="w-full p-3 border rounded-md border-border focus:ring focus:ring-primary"
+        [(ngModel)]="formData.name"
+        name="name"
+        required
+      />
+      <input
+        type="email"
+        placeholder="E-mail"
+        class="w-full p-3 border rounded-md border-border focus:ring focus:ring-primary"
+        [(ngModel)]="formData.email"
+        name="email"
+        required
+      />
+      <textarea
+        placeholder="Twoja wiadomość"
+        class="w-full p-3 border rounded-md border-border focus:ring focus:ring-primary"
+        [(ngModel)]="formData.message"
+        name="message"
+        rows="5"
+        required
+      ></textarea>
+      <div class="flex justify-center md:justify-start">
+        <button
+          type="submit"
+          class="px-8 bg-primary text-white py-2 rounded-md hover:bg-cta transition"
+        >
+          Wyślij
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

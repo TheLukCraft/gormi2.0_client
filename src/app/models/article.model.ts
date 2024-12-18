@@ -4,4 +4,5 @@ export interface Article {
   content: string;
   link: string;
   imageUrl: string;
+  tags: string[];
 }

@@ -1,39 +1,37 @@
 <div *ngIf="article" class="w-full max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-  <!-- Górna sekcj a z obrazem -->
+  <!-- Sekcja obrazka -->
   <div class="relative">
     <img [src]="article.imageUrl" [alt]="article.title" class="w-full h-64 md:h-96 object-cover rounded-lg">
   </div>
 
-  <div class="mt-8 text-center">
-    <h1 class="text-3xl md:text-5xl font-bold text-primary leading-tight">
-      {{ article.title }}
-    </h1>
-    <p class="text-neutral text-sm md:text-base mt-2">
-      {{ article.description }}
-    </p>
-  </div>
+  <!-- Sekcja artykułu -->
+  <div class="bg-white relative -mt-32 z-10 mx-auto max-w-5xl py-8 rounded-2xl shadow-md px-4">
+    <div class="mt-8 mx-auto max-w-4xl">
+      <!-- Tytuł i podtytuł -->
+      <h1 class="text-3xl md:text-5xl font-semibold text-primary leading-tight mb-6">
+        {{ article.title }}
+      </h1>
 
-  <div class="mt-12 mx-auto max-w-3xl">
-    <article class="prose prose-lg md:prose-xl max-w-none text-textPrimary">
-      <p>
-        {{ article.content }}
-      </p>
-    </article>
-  </div>
+      <!-- Treść artykułu -->
+      <article class="prose prose-lg md:prose-xl max-w-none text-textPrimary leading-relaxed">
+        <p>
+          {{ article.content }}
+        </p>
+      </article>
+    </div>
 
-  <!-- Sekcja tagów -->
-  <div class="mt-8 mx-auto max-w-3xl">
-    <h3 class="text-lg font-semibold text-textPrimary mb-4">Tagi:</h3>
-    <div class="flex flex-wrap gap-4">
-      <a href="/tag/kostka" class="px-4 py-2 bg-primary text-textSecondary rounded-full text-sm hover:bg-cta transition">
-        Kostka Brukowa
-      </a>
-      <a href="/tag/ogrodzenia" class="px-4 py-2 bg-primary text-textSecondary rounded-full text-sm hover:bg-cta transition">
-        Ogrodzenia
-      </a>
-      <a href="/tag/pergole" class="px-4 py-2 bg-primary text-textSecondary rounded-full text-sm hover:bg-cta transition">
-        Pergole
-      </a>
+    <!-- Sekcja tagów -->
+    <div class="mt-8 mx-auto max-w-4xl">
+      <h3 class="text-lg font-semibold text-textPrimary mb-4">Tagi:</h3>
+      <div class="flex flex-wrap gap-4">
+        <a
+          *ngFor="let tag of article.tags"
+          class="flex items-center gap-2 px-4 py-2 bg-primary text-textSecondary rounded-full text-sm hover:bg-cta hover:shadow-md transition-all"
+        >
+        {{ tag }}
+        </a>
+      </div>
     </div>
   </div>
 </div>
+

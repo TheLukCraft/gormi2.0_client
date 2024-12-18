@@ -18,7 +18,7 @@
         </svg>
         <span class="sr-only">Search icon</span>
       </div>
-      <input type="text" id="search-navbar" class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Wyszukaj...">
+      <input type="text" id="search-navbar" class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-cta focus:border-cta dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-cta dark:focus:border-cta" placeholder="Wyszukaj...">
     </div>
     <button data-collapse-toggle="navbar-search" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-search" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
@@ -34,29 +34,29 @@
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
           </svg>
         </div>
-        <input type="text" id="search-navbar" class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Wyszukaj...">
+        <input type="text" id="search-navbar" class="block w-full p-2 ps-10 text-sm text-textPrimary border border-gray-300 rounded-lg bg-gray-50 focus:ring-cta focus:border-cta dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-cta dark:focus:border-cta" placeholder="Wyszukaj...">
       </div>
       <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-border rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         <li>
-          <a routerLink="/" class="block py-2 px-3 text-textSecondary bg-primary rounded md:bg-transparent md:text-primary md:p-0 md:dark:text-primary" aria-current="page">Strona Główna</a>
+          <a routerLink="/" routerLinkActive="md:text-primary" [routerLinkActiveOptions]="{ exact: true }" class="block py-2 px-3 text-textPrimary rounded hover:bg-cta hover:text-textSecondary md:hover:bg-transparent md:hover:text-cta md:p-0 dark:text-textSecondary md:dark:hover:text-primary dark:hover:bg-secondary dark:hover:text-textSecondary md:dark:hover:bg-transparent dark:border-border">Strona Główna</a>
         </li>
         <li>
-          <a routerLink="/kostka-brukowa" class="block py-2 px-3 text-textPrimary rounded hover:bg-shadow md:hover:bg-transparent md:hover:text-cta md:p-0 md:dark:hover:text-primary dark:text-textSecondary dark:hover:bg-secondary dark:hover:text-textSecondary md:dark:hover:bg-transparent dark:border-border">Kostka Brukowa</a>
+          <a routerLink="/kostka-brukowa" routerLinkActive="md:text-primary" class="block py-2 px-3 text-textPrimary rounded hover:bg-cta  hover:text-textSecondary md:hover:bg-transparent md:hover:text-cta md:p-0 md:dark:hover:text-primary dark:text-textSecondary dark:hover:bg-secondary dark:hover:text-textSecondary md:dark:hover:bg-transparent dark:border-border">Kostka Brukowa</a>
         </li>
         <li>
-          <a routerLink="/ogrodzenia" class="block py-2 px-3 text-textPrimary rounded hover:bg-shadow md:hover:bg-transparent md:hover:text-cta md:p-0 dark:text-textSecondary md:dark:hover:text-primary dark:hover:bg-secondary dark:hover:text-textSecondary md:dark:hover:bg-transparent dark:border-border">Ogrodzenia</a>
+          <a routerLink="/ogrodzenia" routerLinkActive="md:text-primary" class="block py-2 px-3 text-textPrimary rounded hover:bg-cta hover:text-textSecondary md:hover:bg-transparent md:hover:text-cta md:p-0 dark:text-textSecondary md:dark:hover:text-primary dark:hover:bg-secondary dark:hover:text-textSecondary md:dark:hover:bg-transparent dark:border-border">Ogrodzenia</a>
         </li>
         <li>
-          <a routerLink="/pergole-aluminiowe-i-bioklimatyczne" class="block py-2 px-3 text-textPrimary rounded hover:bg-shadow md:hover:bg-transparent md:hover:text-cta md:p-0 dark:text-textSecondary md:dark:hover:text-primary dark:hover:bg-secondary dark:hover:text-textSecondary md:dark:hover:bg-transparent dark:border-border">Pergole</a>
+          <a routerLink="/pergole-aluminiowe-i-bioklimatyczne" routerLinkActive="md:text-primary" class="block py-2 px-3 text-textPrimary rounded hover:bg-cta  hover:text-textSecondary md:hover:bg-transparent md:hover:text-cta md:p-0 dark:text-textSecondary md:dark:hover:text-primary dark:hover:bg-secondary dark:hover:text-textSecondary md:dark:hover:bg-transparent dark:border-border">Pergole</a>
         </li>
         <li>
-          <a routerLink="/akcesoria-i-inne" class="block py-2 px-3 text-textPrimary rounded hover:bg-shadow md:hover:bg-transparent md:hover:text-cta md:p-0 dark:text-textSecondary md:dark:hover:text-primary dark:hover:bg-secondary dark:hover:text-textSecondary md:dark:hover:bg-transparent dark:border-border">Akcesoria i Inne</a>
+          <a routerLink="/akcesoria-i-inne" routerLinkActive="md:text-primary" class="block py-2 px-3 text-textPrimary rounded hover:bg-cta  hover:text-textSecondary md:hover:bg-transparent md:hover:text-cta md:p-0 dark:text-textSecondary md:dark:hover:text-primary dark:hover:bg-secondary dark:hover:text-textSecondary md:dark:hover:bg-transparent dark:border-border">Akcesoria i Inne</a>
         </li>
         <li>
-          <a routerLink="/sklep" class="block py-2 px-3 text-textPrimary rounded hover:bg-shadow md:hover:bg-transparent md:hover:text-cta md:p-0 dark:text-textSecondary md:dark:hover:text-primary dark:hover:bg-secondary dark:hover:text-textSecondary md:dark:hover:bg-transparent dark:border-border">Sklep Online</a>
+          <a routerLink="/sklep" routerLinkActive="md:text-primary" class="block py-2 px-3 text-textPrimary rounded hover:bg-cta  hover:text-textSecondary md:hover:bg-transparent md:hover:text-cta md:p-0 dark:text-textSecondary md:dark:hover:text-primary dark:hover:bg-secondary dark:hover:text-textSecondary md:dark:hover:bg-transparent dark:border-border">Sklep Online</a>
         </li>
         <li>
-          <a routerLink="/kontakt" class="block py-2 px-3 text-textPrimary rounded hover:bg-shadow md:hover:bg-transparent md:hover:text-cta md:p-0 dark:text-textSecondary md:dark:hover:text-primary dark:hover:bg-secondary dark:hover:text-textSecondary md:dark:hover:bg-transparent dark:border-border">Kontakt</a>
+          <a routerLink="/kontakt"  class="block py-2 px-3 text-textPrimary rounded hover:bg-cta  hover:text-textSecondary md:hover:bg-transparent md:hover:text-cta md:p-0 dark:text-textSecondary md:dark:hover:text-primary dark:hover:bg-secondary dark:hover:text-textSecondary md:dark:hover:bg-transparent dark:border-border">Kontakt</a>
         </li>
       </ul>
     </div>
