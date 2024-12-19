@@ -1,4 +1,4 @@
-<div *ngIf="article" class="w-full max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+<div *ngIf="article" class="w-full max-w-7xl mx-auto px-4 md:px-6 lg:px-8 mb-4">
   <!-- Sekcja obrazka -->
   <div class="relative">
     <img [src]="article.imageUrl" [alt]="article.title" class="w-full h-64 md:h-96 object-cover rounded-lg">
@@ -13,10 +13,7 @@
       </h1>
 
       <!-- Treść artykułu -->
-      <article class="prose prose-lg md:prose-xl max-w-none text-textPrimary leading-relaxed">
-        <p>
-          {{ article.content }}
-        </p>
+      <article class="prose prose-lg md:prose-xl max-w-none text-textPrimary leading-relaxed" [innerHTML]="sanitizedContent">
       </article>
     </div>
 
