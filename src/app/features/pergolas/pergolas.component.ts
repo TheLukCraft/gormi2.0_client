@@ -7,11 +7,12 @@ import { ContentSesionShortComponent } from "../../shared/content-section-short/
 import { LatestsArticlesComponent } from "../../shared/latests-articles/latests-articles.component";
 import { ShortGalleryComponent } from "../../shared/short-gallery/short-gallery.component";
 import { ProductsCarouselSmallComponent } from "../../shared/products-carousel-small/products-carousel-small.component";
+import { GalleriesComponent } from "../../shared/galleries/galleries.component";
 
 @Component({
   selector: 'app-pergolas',
   standalone: true,
-  imports: [BreadcrumbComponent, ContentSectionComponentComponent, ScrollingBannerComponent, CtaBannerComponent, ContentSesionShortComponent, LatestsArticlesComponent, ShortGalleryComponent, ProductsCarouselSmallComponent],
+  imports: [BreadcrumbComponent, ContentSectionComponentComponent, ScrollingBannerComponent, CtaBannerComponent, ContentSesionShortComponent, LatestsArticlesComponent, ShortGalleryComponent, ProductsCarouselSmallComponent, GalleriesComponent],
   templateUrl: './pergolas.component.html',
   styleUrl: './pergolas.component.scss'
 })

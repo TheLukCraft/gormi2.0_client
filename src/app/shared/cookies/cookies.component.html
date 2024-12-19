@@ -1,0 +1,48 @@
+<div
+  *ngIf="isModalVisible"
+  class="fixed bottom-4 left-4 z-50 w-full max-w-lg p-4 bg-white rounded-lg shadow dark:bg-gray-700"
+>
+  <!-- Modal content -->
+  <div class="relative">
+    <div class="flex items-center justify-between mb-4">
+      <h3 class="text-lg font-medium text-textPrimary dark:text-textSecondary">Polityka Cookies</h3>
+      <button
+        (click)="declineCookies()"
+        class="text-gray-400 bg-transparent hover:text-textPrimary rounded-lg text-sm w-8 h-8 dark:hover:text-white"
+      >
+        <svg
+          class="w-4 h-4"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+        <span class="sr-only">Zamknij</span>
+      </button>
+    </div>
+    <p class="text-sm text-gray-600 dark:text-gray-400">
+      Strona wykorzystuje pliki cookies w celu zapewnienia prawidłowego działania oraz w celach
+      analitycznych i marketingowych. Możesz zmienić ustawienia dotyczące plików cookies w swojej
+      przeglądarce. Szczegółowe informacje znajdziesz w naszej
+      <a routerLink="/polityka-prywatnosci" class="text-cta dark:text-blue-400 hover:underline">Polityce
+        Prywatności</a>.
+    </p>
+    <div class="flex items-center mt-4 space-x-4">
+      <button
+        (click)="acceptCookies()"
+        class="px-4 py-2 text-sm text-textSecondary bg-cta rounded-lg hover:bg-primary focus:outline-none"
+      >
+        Akceptuję
+      </button>
+      <button
+        (click)="declineCookies()"
+        class="px-4 py-2 text-sm text-textPrimary bg-gray-200 rounded-lg hover:bg-gray-300 dark:bg-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
+      >
+        Nie akceptuję
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="pt-6">
+  <div class="flex justify-center mb-12">
+    <app-breadcrumb ></app-breadcrumb>
+  </div>
+</div>
+
+<div class="w-full max-w-7xl mx-auto my-12">
+
+  <h2 class="text-4xl md:text-5xl font-bold mb-8 text-textPrimary text-center">
+    {{ galleryName }}
+  </h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <div
+      *ngFor="let image of images"
+      (click)="openDialog(image)"
+      class="cursor-pointer"
+    >
+      <img
+        [src]="image"
+        alt="Gallery image"
+        class="rounded-lg object-cover w-full h-64 transition-transform duration-300 hover:scale-105"
+      />
+    </div>
+  </div>
+
+  <!-- Custom Dialog -->
+  <div *ngIf="selectedImage" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+    <div class="relative max-w-3xl w-full">
+      <button
+        (click)="closeDialog()"
+        class="absolute top-2 right-2 text-white text-2xl font-bold bg-gray-800 rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-700 transition"
+      >
+        &times;
+      </button>
+      <img [src]="selectedImage" alt="Full view" class="rounded-lg object-contain w-full max-h-[80vh]" />
+    </div>
+  </div>
+</div>

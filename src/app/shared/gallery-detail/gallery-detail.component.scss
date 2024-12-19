@@ -1,0 +1,14 @@
+/* Styl dialogu */
+.fixed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  @apply rounded-lg object-cover;
+}
+
+button {
+  @apply text-white text-2xl font-bold bg-textPrimary rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-700 transition;
+}

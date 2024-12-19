@@ -1,0 +1,23 @@
+<div class="w-full max-w-7xl mx-auto my-12">
+  <h2 class="text-4xl md:text-5xl font-bold mb-8 text-textPrimary text-center">
+    <span class="text-primary">Nasze</span> Galerie
+  </h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div
+      *ngFor="let gallery of galleries"
+      (click)="navigateToGallery(gallery.path)"
+      class="relative border border-border rounded-lg shadow-lg cursor-pointer transition-transform duration-200 hover:scale-105 overflow-hidden"
+    >
+      <!-- Obrazek galerii -->
+      <img
+        [src]="'/assets/images/galerie/' + gallery.path + '/1.webp'"
+        [alt]="gallery.name"
+        class="w-full h-96 object-cover"
+      />
+      <!-- Pasek z nazwą galerii -->
+      <div class="absolute bottom-0 w-full bg-cta bg-opacity-70 text-center py-2">
+        <h3 class="text-lg md:text-xl font-semibold text-white">{{ gallery.name }}</h3>
+      </div>
+    </div>
+  </div>
+</div>
