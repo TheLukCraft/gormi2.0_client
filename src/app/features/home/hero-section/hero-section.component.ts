@@ -7,7 +7,7 @@ import { Slide2Component } from "./slide-2/slide-2.component";
 @Component({
   selector: 'app-hero-section',
   standalone: true,
-  imports: [Slide1Component, Slide2Component],
+  imports: [Slide1Component],
   templateUrl: './hero-section.component.html',
   styleUrl: './hero-section.component.scss'
 })
