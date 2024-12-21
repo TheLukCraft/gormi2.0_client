@@ -1,0 +1,32 @@
+User-agent: *
+Disallow: /*?*
+
+# Placeholder dla mapy witryny
+Sitemap: https://gormi.pl/sitemap.xml
+Sitemap: https://gormi.bieda.it/sitemap.xml
+
+# Zezwolenie dla dobrych botów
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Blokowanie niechcianych botów
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
