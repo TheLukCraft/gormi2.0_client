@@ -5,6 +5,7 @@ import { LatestsProductsComponent } from "../../shared/latests-products/latests-
 import { AboutUsComponent } from "./about-us/about-us.component";
 import { LatestsArticlesComponent } from "../../shared/latests-articles/latests-articles.component";
 import { GalleriesComponent } from "../../shared/galleries/galleries.component";
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -14,5 +15,4 @@ import { GalleriesComponent } from "../../shared/galleries/galleries.component";
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-
 }

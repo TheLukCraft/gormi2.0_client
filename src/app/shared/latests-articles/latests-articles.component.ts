@@ -17,7 +17,7 @@ export class LatestsArticlesComponent {
       description: 'Kostka brukowa jest znana ze swojej wyjątkowej trwałości i odporności na ciężkie warunki atmosferyczne. Wykonana z betonu lub kamienia naturalnego, kostka brukowa jest odporna na duże obciążenia, co czyni ją idealnym wyborem na podjazdy i miejsca parkingowe. Jej struktura zapewnia również długotrwałą stabilność i minimalną konserwację.',
       content: 'Dolore laboris culpa est sint veniam adipisicing elit cupidatat adipisicing exercitation nulla. Cupidatat sint tempor amet et est duis commodo do sit ullamco in voluptate labore qui. Adipisicing magna proident Lorem magna nostrud laboris velit quis labore id laborum.',
       link: '/blog/kostka-brukowa-a-plyty-tarasowe-porownanie-materialow',
-      imageUrl: '/assets/images/galerie/kostki-brukowe/img8.jpg',
+      imageUrl: '/assets/images/galerie/kostki-brukowe/img8.webp',
       tags: ['kostka brukowa', 'plyty tarasowe', 'porownanie materialow']
     },
     {
@@ -25,7 +25,7 @@ export class LatestsArticlesComponent {
       description: 'Płyty tarasowe to jeden z najbardziej popularnych i funkcjonalnych sposobów na wykończenie przestrzeni ogrodowej. Dzięki swojej trwałości, estetyce oraz łatwości w utrzymaniu, stanowią idealne rozwiązanie dla każdego, kto pragnie stworzyć piękny i wygodny taras. W tym artykule przyjrzymy się bliżej zaletom płyt tarasowych, różnorodności dostępnych materiałów oraz procesowi ich montażu.',
       content: 'Adipisicing excepteur excepteur culpa pariatur ut dolor voluptate sint ex mollit voluptate. Nostrud reprehenderit minim dolore irure. Cillum dolore nisi duis excepteur cupidatat elit. Nisi ex amet incididunt do laboris officia irure sit do minim. Sint reprehenderit consectetur amet elit consectetur commodo enim est aute occaecat eu quis non. Magna ad reprehenderit ullamco minim enim amet occaecat non enim ullamco aliqua laboris consectetur non. Adipisicing labore consectetur duis veniam quis sit tempor fugiat irure fugiat tempor cupidatat.',
       link: '/blog/plyty-tarasowe-idealne-rozwiazanie-dla-twojego-ogrodu',
-      imageUrl: '/assets/images/galerie/ogrody-wystawowe/img1.jpg',
+      imageUrl: '/assets/images/galerie/ogrody-wystawowe/img1.webp',
       tags: ['plyty tarasowe', 'idealne rozwiazanie', 'ogrody wystawowe']
     },
     {
