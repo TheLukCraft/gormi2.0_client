@@ -10,9 +10,9 @@ import { Component } from '@angular/core';
 })
 export class ScrollingBannerComponent {
   logos: { name: string; link: string }[] = [
-    { name: 'drog-bruk.webp', link: 'https://www.drog-bruk.pl' },
+    { name: 'drog-bruk.webp', link: 'https://www.drogbruk.pl' },
     { name: 'libet.webp', link: 'https://www.libet.pl' },
-    { name: 'pater.webp', link: 'https://www.pater.pl' },
+    { name: 'pater.webp', link: 'https://kostkapater.pl/' },
     { name: 'semmelrock.webp', link: 'https://www.semmelrock.pl' },
     { name: 'settline-logo.webp', link: 'https://www.settline.pl' }
   ];

@@ -54,7 +54,7 @@ export class ArticlePageComponent implements OnInit {
 
       `,
       link: '/blog/kostka-brukowa-a-plyty-tarasowe-porownanie-materialow',
-      imageUrl: '/assets/images/galerie/kostki-brukowe/img8.jpg',
+      imageUrl: '/assets/images/galerie/kostki-brukowe/img8.webp',
       tags: ['kostka brukowa', 'plyty tarasowe', 'porownanie materialow']
     },
     {
@@ -82,7 +82,7 @@ export class ArticlePageComponent implements OnInit {
 
       `,
       link: '/blog/plyty-tarasowe-idealne-rozwiazanie-dla-twojego-ogrodu',
-      imageUrl: '/assets/images/galerie/ogrody-wystawowe/img1.jpg',
+      imageUrl: '/assets/images/galerie/ogrody-wystawowe/img1.webp',
       tags: ['plyty tarasowe', 'idealne rozwiazanie', 'ogrody wystawowe']
     },
     {

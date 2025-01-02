@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class GalleriesComponent {
   galleries = [
     { name: 'Ogród Libertów', path: 'ogrod-libertow' },
-    { name: 'Ogród Węgrzyce', path: 'ogrod-wegrzyce' }
+    { name: 'Ogród Węgrzce', path: 'ogrod-wegrzyce' }
   ];
 
   constructor(private router: Router) {}
