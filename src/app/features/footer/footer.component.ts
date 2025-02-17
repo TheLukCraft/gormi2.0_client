@@ -21,14 +21,6 @@ export class FooterComponent {
       hoursWeekdays: '07:00 - 16:00',
       hoursSaturday: '08:00 - 13:00',
     },
-    'Bielsko-Biała': {
-      name: 'GORMI Bielsko-Biała',
-      address: ' ul. Cieszyńska 259',
-      phone: '533-823-7661',
-      email: 'bielsko@gormi.pl',
-      hoursWeekdays: '07:00 - 16:00',
-      hoursSaturday: '08:00 - 13:00',
-    },
     'Kraków': {
       name: 'GORMI Kraków Bibice Węgrzce',
       address: ' ul. Warszawska 40A',

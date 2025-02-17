@@ -50,13 +50,6 @@ export class ContactComponent {
         phone: '534 421 166',
         email: 'wegrzce@gormi.pl',
         mapSrc: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.1656983108146!2d19.964968877001574!3d50.12062127153099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a81d66940a1%3A0xcaf6a2a0c5f0f557!2sZapole%202%2C%2032-087%20W%C4%99grzce!5e0!3m2!1spl!2spl!4v1734517402759!5m2!1spl!2spl')
-      },
-      {
-        name: 'GORMI Bielsko-Biała',
-        address: 'Cieszyńska 259, 43-303 Bielsko-Biała',
-        phone: '533-823-766',
-        email: 'bielsko@gormi.pl',
-        mapSrc: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10298.88528220745!2d18.99589101063717!3d49.810106678635535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716a04a5e810263%3A0x223fa47914deef86!2sCieszy%C5%84ska%20259%2C%2043-300%20Bielsko-Bia%C5%82a!5e0!3m2!1spl!2spl!4v1734517449180!5m2!1spl!2spl')
       }
     ];
   }
