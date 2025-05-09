@@ -1,4 +1,4 @@
-FROM node:21-alpine AS builder
+FROM node:24-alpine AS builder
 RUN npm install -g @angular/cli
 WORKDIR /app
 RUN npm cache clean --force
@@ -12,5 +12,5 @@ FROM nginx:latest
 COPY --from=builder /app/dist/client/browser /usr/share/nginx/html
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
-EXPOSE 3000
+EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
